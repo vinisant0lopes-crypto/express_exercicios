@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- teste dos forms -->
+     <h1>Calcule seu IMC</h1>
+    <form method="POST" action="/exercicioTres">
+
+      <label>Peso (kg): <input name="peso" required /></label><br/>
+
+      <label>Altura (m): <input name="altura" required /></label><br/>
+
+      <button type="submit">Calcular</button>
+
+    </form>
+
+    <h2>Utiliza . para separar casas decimais pois o JavaScript usa o ponto como separador decimal</h2>
+
+    <br>
+
+    <h1>Perguntas sobre gosto</h1>
+
+    <form method="POST" action="/exercicioQuatro">
+
+      <label>Você gosta de sushi? 
+        <select name="sushi" required>
+          <option value="sim">Sim</option>
+          <option value="nao">Não</option>
+        </select>
+      </label><br/>
+
+      <label>Você gosta de hamburguer? 
+        <select name="hamburguer" required>
+          <option value="sim">Sim</option>
+          <option value="nao">Não</option>
+        </select>
+      </label><br/>
+
+      <button type="submit">Verificar</button>
+
+    </form>
+
+    <br>
+
+    <h1>Calcule idade</h1>
+    <form method="POST" action="/exercicioCinco">
+
+      <label>Idade: <input name="idade" required /></label><br/>
+
+      <button type="submit">Inserir</button>
+
+    </form>
+
+    <br>
+
+    <h1>Insira o mes:</h1>
+    <form method="POST" action="/exercicioSeis">
+
+      <label>Mes: <input name="mes" required /></label><br/>
+
+      <button type="submit">Inserir</button>
+
+    </form>
+
+    <br>
+
+    <h1>Calculo de Potência</h1>
+    <form method="POST" action="/exercicioSete">
+
+      <label>Base: <input name="base" required /></label><br/>
+
+      <label>Elevado: <input name="elevado" required /></label><br/>
+
+      <button type="submit">Calcular</button>
+
+    </form>
+
+    <h2>Utiliza . para separar casas decimais pois o JavaScript usa o ponto como separador decimal</h2>
+
+    <br>
+
+     <h1>Alterar Vetor</h1>
+    <form method="POST" action="/exercicioOito">
+      <label>Escolha a ação:
+        <select name="manipularVetor" required>
+          <option value="exibir">Exibir</option>
+          <option value="alterar">Alterar</option>
+        </select>
+      </label><br/>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <br>
+
+    <h1>Alterar vetor</h1>
+
+      <form method="POST" action="/exercicioOitoAlterar">
+        <label>Posição (0-4): <input name="posicao" required type="number" min="0" max="4" /></label><br/>
+        <label>Valor: <input name="valor" required type="number" /></label><br/>
+        <button type="submit">Alterar</button>
+      </form>
+
+    <br>
+
+
+</body>
+</html>
