@@ -159,8 +159,6 @@ app.post("/exercicioSeis", async (req, res) => {
 });
 
 app.get("/exercicioSete", (req, res) => {
-//Send: retorna um formulário HTML para o usuário inserir peso e altura
-// lembre que o express utiliza formatos HTML
   res.send(`
     <h1>Calculo de Potência</h1>
     <form method="POST" action="/exercicioSete">

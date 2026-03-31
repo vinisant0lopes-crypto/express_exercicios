@@ -1,4 +1,3 @@
-// Remove inquirer aqui (será via Express ou chamada direta)
 async function exercicio_seis(mes) {
   const mesNum = parseInt(mes);
 
