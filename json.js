@@ -1,9 +1,6 @@
 function objetos() {
-    
 
-
-
-    var objetos = [
+    let objetos = [
     {
         "nome": "geladeira",
         "atributos": {
@@ -107,8 +104,8 @@ function objetos() {
 ]
 
 
-console.log(objetos)
+return objetos;
 
 }
 
-export { objetos }
+export { objetos };

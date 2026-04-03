@@ -1,13 +1,13 @@
 
 async function exercicio_dois() {
 
- var valor1 = 10
- var valor2 = 5
+ let valor1 = 10
+ let valor2 = 5
 
- var adicao = valor1 + valor2
- var subtracao = valor1 - valor2
- var multiplicacao = valor1 * valor2
- var divisao = valor1 / valor2
+ let adicao = valor1 + valor2
+ let subtracao = valor1 - valor2
+ let multiplicacao = valor1 * valor2
+ let divisao = valor1 / valor2
 
 
 

@@ -5,7 +5,7 @@ async function exercicio_seis(mes) {
     throw new Error("Mês inválido");
   }
 
-var classificacao;
+let classificacao;
   // break não é necessário aqui, pois cada case retorna um valor, encerrando a função. O default lança um erro se o número do mês for inválido.
   //Nota (aqui o retorno é uma string, e não um objeto, então no index deve estar apenas resultado, e não resultado.classificacao)
   switch (mesNum) {

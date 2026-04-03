@@ -7,6 +7,7 @@ import { exercicio_cinco } from "./exercicio_cinco.js";
 import { exercicio_seis } from "./exercicio_seis.js";
 import { exercicio_sete } from "./exercicio_sete.js";
 import { exercicio_oito } from "./exercicio_oito.js";
+import { objetos } from './json.js';
 
 
 const app = express();
@@ -251,7 +252,12 @@ app.post("/exercicioOitoAlterar", async (req, res) => {
   }
 });
 
-app.get("/objetos", (req, res) => res.json(objetos));
+
+app.get('/objetos', async (req, res) => {
+    
+    const objetos_var = await objetos();
+    res.send(objetos_var)
+})
 
 
 
@@ -266,4 +272,5 @@ app.listen(3000, () => {
   console.log('Sexto exercicio: http://localhost:3000/exercicioSeis')
   console.log('Sétimo exercicio: http://localhost:3000/exercicioSete')
   console.log('Oitavo exercicio: http://localhost:3000/exercicioOito')
+  console.log('Nono exercicio: http://localhost:3000/objetos')
 })
