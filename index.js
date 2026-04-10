@@ -272,5 +272,5 @@ app.listen(3000, () => {
   console.log('Sexto exercicio: http://localhost:3000/exercicioSeis')
   console.log('Sétimo exercicio: http://localhost:3000/exercicioSete')
   console.log('Oitavo exercicio: http://localhost:3000/exercicioOito')
-  console.log('Nono exercicio: http://localhost:3000/objetos')
+  console.log('Json : http://localhost:3000/objetos')
 })
