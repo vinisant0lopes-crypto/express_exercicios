@@ -22,13 +22,16 @@ app.get('/exercicioUm', async (req, res) => {
     res.send(exercicioUm)
 })
 
+// ------------------------------------------------------------------------------------------------------------------------
+
+
 app.get('/exercicioDois', async (req, res) => {
     
     const exerciciodois = await exercicio_dois();
     res.send(exerciciodois)
 })
 
-
+// ------------------------------------------------------------------------------------------------------------------------
 
 app.get("/exercicioTres", (req, res) => {
 //Send: retorna um formulário HTML para o usuário inserir peso e altura
@@ -66,6 +69,7 @@ app.post("/exercicioTres", async (req, res) => {
   }
 });
 
+// ------------------------------------------------------------------------------------------------------------------------
 
 app.get("/exercicioQuatro", (req, res) => {
   res.send(`
@@ -106,6 +110,8 @@ app.post("/exercicioQuatro", async (req, res) => {
   }
 });
 
+// ------------------------------------------------------------------------------------------------------------------------
+
 
 app.get("/exercicioCinco", (req, res) => {
   res.send(`
@@ -133,6 +139,7 @@ app.post("/exercicioCinco", async (req, res) => {
   }
 });
 
+// ------------------------------------------------------------------------------------------------------------------------
 
 app.get("/exercicioSeis", (req, res) => {
   res.send(`
@@ -158,6 +165,8 @@ app.post("/exercicioSeis", async (req, res) => {
     res.status(400).send(`<p>Erro: ${err.message}</p><a href="/exercicioSeis">Voltar</a>`);
   }
 });
+
+// ------------------------------------------------------------------------------------------------------------------------
 
 app.get("/exercicioSete", (req, res) => {
   res.send(`
@@ -189,6 +198,8 @@ app.post("/exercicioSete", async (req, res) => {
     res.status(400).send(`<p>Erro: ${err.message}</p><a href="/exercicioTres">Voltar</a>`);
   }
 });
+
+// ------------------------------------------------------------------------------------------------------------------------
 
 app.get("/exercicioOito", (req, res) => {
   res.send(`
@@ -237,6 +248,8 @@ app.post("/exercicioOito", async (req, res) => {
   res.status(400).send(`<p>Ação inválida</p><a href="/exercicioOito">Voltar</a>`);
 });
 
+
+
 app.post("/exercicioOitoAlterar", async (req, res) => {
   try {
     const resultado = await exercicio_oito('alterar', req.body.posicao, req.body.valor);
@@ -252,6 +265,8 @@ app.post("/exercicioOitoAlterar", async (req, res) => {
   }
 });
 
+// ------------------------------------------------------------------------------------------------------------------------
+
 
 app.get('/objetos', async (req, res) => {
     
@@ -259,8 +274,7 @@ app.get('/objetos', async (req, res) => {
     res.send(objetos_var)
 })
 
-
-
+// ------------------------------------------------------------------------------------------------------------------------
 
 
 app.listen(3000, () => {
