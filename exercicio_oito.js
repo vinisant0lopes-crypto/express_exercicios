@@ -12,8 +12,8 @@ async function exercicio_oito(acao, local, numero) {
   }
 
   if (acaoLower === 'alterar') {
-    const posicao = parseInt(local, 10);
-    const valor = parseInt(numero, 10);
+    const posicao = parseInt(local);
+    const valor = parseInt(numero);
 
     if (Number.isNaN(posicao) || posicao < 0 || posicao >= vetorBase.length) {
       throw new Error('Posição inválida. Informe 0 até 4.');
